@@ -1,0 +1,268 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextIngredient"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="Ingredient" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextWeight"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="Weight" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonAdd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add" />-->
+<!--    </LinearLayout>-->
+
+<!--    <TableLayout-->
+<!--        android:id="@+id/tableLayoutIngredients"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewIngredient"-->
+<!--                android:text="Ingredient"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="5dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewWeight"-->
+<!--                android:text="Weight"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="5dp" />-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radioGroupMealType"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButtonBreakfast"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Breakfast" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButtonLunch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Lunch" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButtonDinner"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Dinner" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radioButtonExtras"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Extras"-->
+<!--            android:checked="true" />-->
+<!--    </RadioGroup>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSave"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Save" />-->
+
+<!--</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/shared_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageButtonMenu"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Place your activity content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextIngredient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="Ingredient"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Weight"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <ImageButton
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button_add"
+                    android:background="@android:color/transparent"
+                    android:text="Add" />
+            </LinearLayout>
+            <TableLayout
+                android:id="@+id/tableLayoutIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row"
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black">
+
+                    <TextView
+                        android:id="@+id/textViewIngredient"
+                        android:text="Ingredient"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="100dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginRight="1dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewWeight"
+                        android:text="Weight"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        android:layout_marginLeft="1dp"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/meal_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="choose meal:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroupMealType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonBreakFast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/radio_button_selector_breakfast"
+                    android:paddingVertical="10dp"
+                    android:text="Breakfast"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_selector_lunch"
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="15dp"
+                    android:padding="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Lunch"
+                    android:textColor="@android:color/transparent"                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_selector_dinner"
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="15dp"
+                    android:padding="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Dinner"
+                    android:textColor="@android:color/transparent"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonExtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_button_selector_extras"
+                    android:background="@android:color/transparent"
+                    android:text="Extras"
+                    android:textColor="@android:color/transparent"
+                    android:checked="true" />
+            </RadioGroup>
+
+            <ImageButton
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button_save"
+                android:background="@android:color/transparent"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

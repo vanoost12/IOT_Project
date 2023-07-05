@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/file_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter file name" />
+
+        <Button
+            android:id="@+id/show_but"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="show CSV" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="back" />
+
+        <TextView
+            android:id="@+id/est_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="estimated number of steps : " />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

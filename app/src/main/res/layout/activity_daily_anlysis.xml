@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- connect_activity.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/shared_layout" />
+
+    <!-- Add activity-specific UI elements here -->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/buttonChooseDate"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/choose_date_button"
+            android:text="Choose Date" />
+
+        <TextView
+            android:id="@+id/tvActivityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity Summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvActivitySummary"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/act_summary_background"
+            android:scaleType="fitXY"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tvFoodTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Summary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvFoodSummary"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_img"
+            android:scaleType="fitXY"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tvCaloriesBalanceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calories Balance"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvCaloriesBalance"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:background="@drawable/calorie_balance_img"
+            android:scaleType="fitXY"
+            android:textColor="@android:color/white"
+            android:padding="16dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvActivitySummary"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingBottom="8dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvFoodSummary"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingBottom="8dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvCaloriesBalance"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:paddingBottom="8dp"/>-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_blue">
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/app_logo"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/con_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogoImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Please enter your username:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/con_msg"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:hint="Enter username"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="16dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/editTextUsername" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <ImageButton
+            android:id="@+id/buttonConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_connect"
+            android:background="@android:color/transparent"
+            android:text="Connect" />
+        <Space
+            android:id="@+id/spaceH"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+        <ImageButton
+            android:id="@+id/buttonsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_sign_in"
+            android:background="@android:color/transparent"
+            android:text="Connect" />
+    </LinearLayout>
+
+</RelativeLayout>

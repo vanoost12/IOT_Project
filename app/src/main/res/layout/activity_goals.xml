@@ -1,0 +1,67 @@
+<!-- activity_calorie_goal.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/shared_layout" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvCurrentGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Goal: Not Set"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your new goal"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/rgGoalDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lower" />
+
+            <RadioButton
+                android:id="@+id/rbHigher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Higher" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/btnUpdateGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_save"
+            android:background="@android:color/transparent"
+            android:text="Update Goal" />
+
+        <TextView
+            android:id="@+id/tvGoalSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</RelativeLayout>

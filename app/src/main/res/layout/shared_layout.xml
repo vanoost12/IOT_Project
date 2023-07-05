@@ -1,0 +1,181 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewBackground"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/background_image"-->
+<!--        android:scaleType="fitXY" />-->
+
+<!--    &lt;!&ndash; Menu Button &ndash;&gt;-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButtonMenu"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:src="@drawable/button_img"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:contentDescription="Menu"/>-->
+
+<!--    &lt;!&ndash; Add other shared UI elements as needed &ndash;&gt;-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/menuLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:visibility="gone">-->
+
+<!--        &lt;!&ndash; Menu Buttons &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonConnect"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/button_connect"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="16dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonAddMeal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/button_add_meal"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="16dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonDailyAnalysis"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/button_daily_analysis"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="16dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonInsertDetails"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/button_insert_details"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="16dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/buttonGoals"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/button_goals"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="16dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    &lt;!&ndash; Content View &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:id="@+id/contentLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginStart="72dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"/>-->
+
+<!--</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_image"
+        android:scaleType="fitXY" />
+
+    <!-- Menu Button -->
+    <ImageButton
+        android:id="@+id/imageButtonMenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/button_img"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Menu" />
+
+    <!-- Add other shared UI elements as needed -->
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:visibility="gone">
+
+        <!-- Menu Buttons -->
+        <ImageButton
+            android:id="@+id/buttonAddMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_add_meal"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/buttonDailyAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_daily_analysis"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/buttonInsertDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_insert_details"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/buttonConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_connect"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:layout_marginBottom="8dp" />
+
+
+    </LinearLayout>
+    <!-- Content View -->
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
